@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mahesh Paul - My works</title>
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <h1>Mahesh Paul</h1>
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu"><i class="fa fa-bars"></i></label>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="works.html" class="active">My works</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <section>
+            <img src="../img/3/stars.png" id="stars">
+            <img src="../img/3/moon.png" id="moon">
+            <img src="../img/3/mountains_behind.png" id="mountains_behind">
+            <h2 id="text4">My Works</h2>
+            <img src="../img/3/mountains_front.png" id="balloon">
+            
+        </section>
+        <div class="sec">
+            <h1><span id="title2" style="text-decoration: underline;">My Works</span></h1>
+            <div class="row">
+                <div class="colm">
+                    <img src="../img/3dmodeling.jpeg">
+                    <div class="layer">
+                        <a href="../html/3dmodeling.html"><h3>3D Modeling</h3></a>
+                    </div>
+                </div>
+                <div class="colm">
+                    <img src="../img/coding.jpeg">
+                    <div class="layer">
+                        <a href="../html/coding.html"><h3>Coding</h3></a>
+                    </div>
+                </div>
+                <div class="colm">
+                    <img src="../img/videoediting.jpeg">
+                    <div class="layer">
+                        <a href="../html/video editing.html"><h3>Video Editing</h3></a>
+                    </div>
+            </div>
+            </div>
+        </div>
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let mountains_behind = document.getElementById('mountains_behind');
+            let text = document.getElementById('text4')
+            let mountains_front = document.getElementById('balloon');
+    
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                stars.style.left = value * 0.25 + 'px';
+                moon.style.top = value * 1.05 + 'px';
+                mountains_behind.style.top = value * 0.5 + 'px';
+                mountains_front.style.top = value * 0 + 'px';
+                text.style.marginRight = value * 4 + 'px';
+            })
+        </script>
+        <footer>
+            <div class="footer-content">
+                <h3>Mahesh Paul</h3>
+                <ul class="socials">
+                    <li><a href="https://twitter.com/CityIsBetter_" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/mahesh_paul_j/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://github.com/CityIsBetter" target="_blank"><i class="fa fa-github"></i></a></li>
+                    <li><a href="mailto:mahesh.paul.j@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy; 2022 MaheshPaul. Designed by <span>Mahesh Paul</span></p>
+            </div>
+        </footer>
+
+    </body>
+</html>

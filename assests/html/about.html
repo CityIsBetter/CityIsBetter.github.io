@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mahesh Paul - About Me</title>
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <h1>Mahesh Paul</h1>
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu"><i class="fa fa-bars"></i></label>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="works.html">My works</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <section>
+            <img src="../img/1/stars1.png" id="stars">
+            <img src="../img/2/moon2.png" id="moon">
+            <h2 id="text2"><span style="padding-left:200px">About Me</span></h2>
+            <img src="../img/2/mountains_front2.png" id="balloon">
+            
+        </section>
+        <div class="sec">
+            <h1><span id="title" STYLE="text-decoration:underline">About Me</span></h1>
+            <p>My name is Mahesh Paul. I was born in 13th of April 2005. So as of right now, I'm 17 years old. 
+                I love tech ever since I was like 9 years old. My early creations were 2d animations(im not showing anything because 
+                its very bad). Then I learnt 2d game development using stencyl and 2dconstruct(unfortunately I lost those files).
+                Now I'm learning few programming languages such as HTML, CSS, JavaScript, Python. I also learnt 3d modeling in free
+                time. <br><br> My aim is to be a full time developer. Right now, nothing in particular but I'm exploring all types of
+                program developer to see which I'm most suited for. 
+            </p>
+        </div>
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let text = document.getElementById('text2')
+            let mountain = document.getElementById('balloon');
+    
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                stars.style.left = value * 0.25 + 'px';
+                moon.style.top = value * 1.2 + 'px';
+                mountain.style.top = value * 0.1 + 'px';
+                text.style.marginRight = value * 4 + 'px';
+            })
+        </script>
+        <footer>
+            <div class="footer-content">
+                <h3>Mahesh Paul</h3>
+                <ul class="socials">
+                    <li><a href="https://twitter.com/CityIsBetter_" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/mahesh_paul_j/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://github.com/CityIsBetter" target="_blank"><i class="fa fa-github"></i></a></li>
+                    <li><a href="mailto:mahesh.paul.j@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy; 2022 MaheshPaul. Designed by <span>Mahesh Paul</span></p>
+            </div>
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mahesh Paul - My Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="assests/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <h1>Mahesh Paul</h1>
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu"><i class="fa fa-bars"></i></label>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="assests/html/about.html">About</a></li>
+                <li><a href="assests/html/works.html">My works</a></li>
+                <li><a href="assests/html/academics.html">Academics</a></li>
+                <li><a href="assests/html/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <section>
+            <img src="assests/img/1/stars1.png" id="stars">
+            <img src="assests/img/1/moon1.png" id="moon">
+            <h2 id="text"><span style="padding-left:400px">My Portfolio</span></h2>
+            <img src="assests/img/1/sea.png" id="sea">
+            <img src="assests/img/1/balloon.png" id="balloon">
+            
+        </section>
+        <div class="sec">
+            <h1>Hi👋, <br>My name is <span id="name" STYLE="text-decoration:underline">Mahesh Paul</span>.</h1> 
+            <p>I'm a Website/Game Developer, I also do 3d Modeling! </p>
+            <br><br>
+            <p>I make professional websites such as this one, I create games using javascript! I am still learning a lot
+                . This website is fully developed by me. The source code 
+                is in my github profile.</p>
+            <br><br>
+            <p>The Projects I've worked on are personal projects, which you can see in "My Works" tab above!</p>
+        </div>
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let text = document.getElementById('text')
+            let balloon = document.getElementById('balloon');
+    
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                stars.style.left = value * 0.25 + 'px';
+                moon.style.top = value * 1.05 + 'px';
+                balloon.style.top = value * 0.2 + 'px';
+                text.style.marginRight = value * 4 + 'px';
+            })
+        </script>
+        <footer>
+            <div class="footer-content">
+                <h3>Mahesh Paul</h3>
+                <ul class="socials">
+                    <li><a href="https://twitter.com/CityIsBetter_" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/mahesh_paul_j/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://github.com/CityIsBetter" target="_blank"><i class="fa fa-github"></i></a></li>
+                    <li><a href="mailto:mahesh.paul.j@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy; 2022 MaheshPaul. Designed by <span>Mahesh Paul</span></p>
+            </div>
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mahesh Paul - Academics</title>
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <h1>Mahesh Paul</h1>
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu"><i class="fa fa-bars"></i></label>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="works.html">My works</a></li>
+                <li><a href="academics.html" class="active">Academics</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <style>
+            section{
+                background: linear-gradient(#11078c,#080258);
+            }
+        </style>
+        <section>
+            <img src="../img/1/stars1.png" id="stars">
+            <img src="../img/1/moon1.png" id="moon">
+            <img src="../img/4/rock_behind.png" id="rock">
+            <h2 id="text3">Academics</h2>
+            <img src="../img/4/rock_front.png" id="balloon">
+            
+        </section>
+        <div class="sec">
+        <h1><span id="title3" STYLE="text-decoration:underline">My School and Marks</span></h1>
+        <p>I studied in Thamarai Internation School, Thanjavur, Tamil Nadu till 3rd grade. 
+            Then I joined Yagappa International School, Thanjavur, Tamil Nadu. I completed my rest of my schooling in Yagappa.
+        <br><br> Till 8th grade I studied Cambridge syllabus, I also wrote Checkpoint exam and I got..</p>
+        <div class="mark1">
+            <h3>Maths - 6/6<br><br>
+            Science - 5/6 <br><br>
+            English - 2.1/6 <br></h3>
+        </div>
+        <p>After 8th grade, I studied Matriculation syllabus, which is statrboard. In 10th public board exams
+            (which I didnt write because of covid), I got..
+        </p>
+        <div class="mark2">
+            <h3>Maths - 84/100<br><br>
+            Science - 87/100<br><br>
+            Social Science - 79/100<br><br>
+            English - 84/100<br><br>
+            Tamil - 74/100<br><br>
+            TOTAL - 408/500</h3>
+        </div>
+        <p>In 11th almost entire year was in online so there was no exams, but in 12th, school reopened very soon and
+            we went to school everyday and it kinda became normal and we had our first proper public exam and I scored..
+        </p>
+        <div class="mark3">
+            <h3>Maths - 81/100<br><br>
+                Physics - 77/100<br><br>
+                Chemistry - 78/100<br><br>
+                Computer Science - 91/100<br><br>
+                English - 90/100<br><br>
+                French - 88/100<br><br>
+                TOTAL - 505/600</h3>
+        </div>
+        <p>I think I did pretty well, actually more than what I thought because I was literally stressed out the 
+            entire time, worried about my performance in exams.
+        </p>
+        </div>
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let text = document.getElementById('text3');
+            let mountain = document.getElementById('balloon');
+            let mountains_behind = document.getElementById('rock');
+    
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                stars.style.left = value * 0.25 + 'px';
+                moon.style.top = value * 1 + 'px';
+                mountains_behind.style.top = value * 0.1 + 'px';
+                mountain.top = value * 0.05 + 'px';
+                text.style.marginRight = value * 4 + 'px';
+            })
+        </script>
+        <footer>
+            <div class="footer-content">
+                <h3>Mahesh Paul</h3>
+                <ul class="socials">
+                    <li><a href="https://twitter.com/CityIsBetter_" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/mahesh_paul_j/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://github.com/CityIsBetter" target="_blank"><i class="fa fa-github"></i></a></li>
+                    <li><a href="mailto:mahesh.paul.j@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy; 2022 MaheshPaul. Designed by <span>Mahesh Paul</span></p>
+            </div>
+        </footer>
+
+    </body>
+</html>
