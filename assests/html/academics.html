@@ -9,7 +9,18 @@
     <body>
         <nav>
             <div class="logo">
-                <h1>Mahesh Paul</h1>
+                <img src="../img/logo.png" id="logo1"
+                    data-noise="0">
+                <script src="https://nextparticle.nextco.de/nextparticle.js"></script>
+                <script>
+                    nextParticle = new NextParticle({
+                        image: document.all.logo1,
+                        particleGap: 1,
+                        noise: 0,
+                        mouseForce: 5,
+                        
+                    });
+                </script>
             </div>
             <input type="checkbox" id="click">
             <label for="click" class="menu"><i class="fa fa-bars"></i></label>
