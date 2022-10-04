@@ -14,3 +14,5 @@ Third Commit:
 - Improved Gallery in MY WORKS
 - Interactive Logo
 
+Fourth Commit:
+- Fixed interactive logo overflow in smaller screen
