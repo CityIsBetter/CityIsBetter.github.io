@@ -16,3 +16,7 @@ Third Commit:
 
 Fourth Commit:
 - Fixed interactive logo overflow in smaller screen
+
+Fifth Commit:
+- Changed margin size
+- Added new desgin in contact page
