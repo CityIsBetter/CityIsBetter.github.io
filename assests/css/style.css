@@ -117,15 +117,17 @@ section img#balloon{
 }
 .sec {
     position: relative;
+    align-items: center;
     padding: 100px;
     background: white;
     border-radius: 15px;
-    margin: 100px;
+    margin: auto;
+    max-width: 1000px;
 }
 .mark1{
     position: relative;
     padding: 20px;
-    background: rgb(232, 155, 155);
+    background: rgb(112, 110, 255);
     border-radius: 15px;
     margin: 20px;
     width: 50%;
@@ -133,7 +135,7 @@ section img#balloon{
 .mark2{
     position: relative;
     padding: 20px;
-    background: rgb(232, 155, 155);
+    background: rgb(112, 110, 255);
     border-radius: 15px;
     margin: 20px;
     width: 50%;
@@ -141,7 +143,7 @@ section img#balloon{
 .mark3{
     position: relative;
     padding: 20px;
-    background: rgb(232, 155, 155);
+    background: rgb(112, 110, 255);
     border-radius: 15px;
     margin: 20px;
     width: 50%;
@@ -280,8 +282,8 @@ footer{
 }
 .contact-box{
     width: 500px;
-    background-color: white;
-    box-shadow: 0 0 20px 0 #999;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px 0 rgb(58, 57, 57);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -300,6 +302,8 @@ form{
 
 }
 .input-field{
+    -webkit-text-fill-color: white;
+    background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
     height: 40px;
     margin-top: 20px;
@@ -310,6 +314,7 @@ form{
     outline: none;
 }
 .textarea-field{
+    background-color: rgba(0, 0, 0, 0.8);
     height: 150px;
     padding-top: 10px;
 }
@@ -332,6 +337,11 @@ nav .menu i{
 #click{
     display: none;
 }
+
+.bgc{
+    background-image: url(../img/bgc.jpg);
+}
+
 @media (max-width: 900px){
     .logo h1{
         font-size: 25px;
