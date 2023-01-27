@@ -20,3 +20,7 @@ Fourth Commit:
 Fifth Commit:
 - Changed margin size
 - Added new desgin in contact page
+
+Sixth Commit"
+- Added Logo
+- Added more works into MY WORKS
